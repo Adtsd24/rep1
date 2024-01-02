@@ -1,4 +1,4 @@
-# This is just a comment
 echo Hello World!
-cd %user%\
+wait 3
 md "Hello World"
+exit
