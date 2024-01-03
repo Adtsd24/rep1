@@ -10,6 +10,6 @@ int main() {
   cout << "Hi! I am a 10 year kid, that is interested in computers! \n";
   cout << "The World War 1 started at: ";
   cout << worldWar1;
-  cout << "I am " << myAge << " years old."
+  cout << "I am " << myAge << " years old.";
   return 0;
 }
