@@ -1,14 +1,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-  cout << "Hello World!";
+  cout << "Hello World! \n";
+  cout << "test \n";
+  cout << "Hi! I am a 10 year kid, that is interested in computers!";
   return 0;
-}
-int main() {
-  cout << "test";
-  return 1;
-}
-int main() {
-  cout << "Hi! I am 10 year old kid, that likes computers!";
-  return 2;
 }
