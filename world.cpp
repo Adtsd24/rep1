@@ -13,5 +13,8 @@ int main() {
   cout << worldWar1 << "\n";
   cout << "I am " << myAge << " years old. \n";
   cout << x1 + x2 + x3;
+  cout << "Print your age in numbers and press Enter. \n";
+  cin >> age; //CIN is a command, that asks for a user input.
+  cout << "Your age is: " << age;
   return 0;
 }
