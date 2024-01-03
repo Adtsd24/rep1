@@ -9,7 +9,7 @@ int main() {
   cout << "This is a test message! \n\n";
   cout << "Hi! I am a 10 year kid, that is interested in computers! \n";
   cout << "The World War 1 started at: ";
-  cout << worldWar1 "\n";
+  cout << worldWar1 << "\n";
   cout << "I am " << myAge << " years old.";
   return 0;
 }
