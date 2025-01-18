@@ -1,4 +1,4 @@
-Copyright 2024, ADtsd. Some Rights Reserved.
+Copyright 2024, ADtsd.
 
 You are free to:
 - Use this software for personal purposes.
