@@ -1,7 +1,7 @@
 // my custom Sandboxels mod!
 runAfterLoad(function() {
     console.log("Thanks for using customSandboxelsMod.js! -ADtsd")
-    console.log("customSandboxelsMod is hosted at https://github.com/Adtsd24/rep1/blob/main/customSandboxelsMod.js")
+    console.log("customSandboxelsMod is hosted at https://raw.githubusercontent.com/Adtsd24/rep1/refs/heads/main/customSandboxelsMod.js")
 })
 
 function toObject(color) {
