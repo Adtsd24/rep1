@@ -2,7 +2,7 @@
 runAfterLoad(function() {
     console.log("Thanks for using customSandboxelsMod.js! -ADtsd")
     console.log("customSandboxelsMod is hosted at https://raw.githubusercontent.com/Adtsd24/rep1/refs/heads/main/customSandboxelsMod.js")
-})
+}
 
 function toObject(color) {
   color = color.match(/\d+/g);
