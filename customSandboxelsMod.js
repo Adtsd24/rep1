@@ -1,7 +1,7 @@
 // my custom Sandboxels mod!
 runAfterLoad(function() {
     console.log("Thanks for using customSandboxelsMod.js! -ADtsd")
-    console.log("customSandboxelsMod is hosted at https://github.com/Adtsd24/rep1/customSandboxelsMod.js")
+    console.log("customSandboxelsMod is hosted at https://github.com/Adtsd24/rep1/blob/main/customSandboxelsMod.js")
 })
 
 function toObject(color) {
@@ -89,12 +89,39 @@ elements.ternium = {
     }
   },
   reactions: {
-    oxygen: { elem1: "ternium_oxide", elem2: "water" },
+    oxygen: { elem1: "ternium_oxide", elem2: "hydrogen" },
   },
-  tempLow: -188.1,
-  stateLow: "liquid_fluorine",
   state: "solid",
   category: "solids",
   density: 15,
+  stain: 0,
+};
+
+elements.ternium_oxide = {
+  color: "#FFFFBF",
+  behavior: behaviors.SOLID,
+  ignore: ["oxygen"],
+  tick: function (pixel) {
+    let change = false;
+    for (let i = -1; i <= 1; i++) {
+      for (let j = -1; j <= 1; j++) {
+        if (!(i === 0 && j === 0) && !isEmpty(pixel.x + i, pixel.y + j, true) && !elements[pixel.element].ignore.includes(pixelMap[pixel.x + i][pixel.y + j].element)) {
+          if (!elements[pixelMap[pixel.x + i][pixel.y + j].element].hardness || Math.random() > elements[pixelMap[pixel.x + i][pixel.y + j].element].hardness) {
+            changePixel(pixelMap[pixel.x + i][pixel.y + j], "fire");
+            change = true;
+          }
+        }
+      }
+    }
+    if (change) {
+      changePixel(pixel, "fire");
+    }
+  },
+  reactions: {
+    hydrogen: { elem1: "ternium", elem2: "oxygen" },
+  },
+  state: "solid",
+  category: "solids",
+  density: 18,
   stain: 0,
 };
